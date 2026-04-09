@@ -1,0 +1,18 @@
+/*div{
+    background-color: blueviolet;
+    color: pink;
+}*/
+
+.QuadradoRosa{
+    width: 250px; /*Largura*/
+    height: 250px; /*Altura*/
+    background-color: crimson; color: white;
+    margin: 20px 10px 30px 40px;
+    padding: 20px;
+}
+
+.QuadradoVioleta{
+    width: 250px; /*Largura*/
+    height: 250px; /*Altura*/
+    background-color: rgb(107, 20, 220); color: white;
+}
