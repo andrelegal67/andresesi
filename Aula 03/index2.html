@@ -1,23 +1,25 @@
 <!DOCTYPE html><!--- Diz para o navegador a atual versão do HTML para configuração do site-->
-<html lang="en"><!--- É o documento todo, desde a configurações até a exibição dos elementos-->
+<html lang="pt-br"><!--- É o documento todo, desde a configurações até a exibição dos elementos-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aula Sesi</title>
         <style>
-            .mcquenn{
-                width: 250px;
-                height:250px;
-                animation: 1s;
+          .mcqueen{
+              width: 250px;
+              height:250px;
+                transition: all 1.5;
+               margin: 50px;
+          }
+        .mcqueen:hover {
+            transform: scale(0.8);
+            rotate: calc(180deg);
             }
-            .mcqueen:hover{
-                transform: scale(1.1);
 
-            }
         </style>
     </head>
     <body>
         <h1 style="background-color: pink; color: purple; width: 300px; height: 300px; text-align: center;">Aula 03</h1>
-        <img class=""mcqueen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyhieylQ3J4-o49GJNzsqJaC28O5_YirMziaIZLhNg55AUAN9bJEfuD6SvLdVy-bpOs23TQnLgcas9Au3uPTMbOK2tU81y8H9KrbNll5Q&s=10"
+        <img class="mcqueen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyhieylQ3J4-o49GJNzsqJaC28O5_YirMziaIZLhNg55AUAN9bJEfuD6SvLdVy-bpOs23TQnLgcas9Au3uPTMbOK2tU81y8H9KrbNll5Q&s=10"
     </body>
 </html>
