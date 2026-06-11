@@ -1,25 +1,13 @@
-let nome = document.querySelector('#nome')
-let sobrenomenome = document.querySelector('#sobrenome')
-let profissão = document.querySelector('#profissão')
-let idade = document.querySelector('#idade')
+let form = document.querySelector('#formulario')
 
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let nome = document.querySelector('#nome').value
+    let sobrenome = document.querySelector('#sobrenome').value
+    let idade = document.querySelector('#idade').value
+    let profissao = document.querySelector('#profissao').value
 
-function exibirNome(){
-    alert(nome)
-} 
-function nome(){
-    let nome = nome(document.querySelector('nome'))
-    return nome.innerHTML = nome
-}
+    let resposta = document.querySelector('#resposta')
 
-function sobrenome(){
-    let nome = nome(document.querySelector('sobrenome'))
-    return nome.innerHTML = sobrenome
-}
-
-
-function idade(){
-
-    let idade = Number(document.querySelector('#idade').value)
-    return resultado.innerHTML = idade
-}
+    resposta.innerHTML = `Olá ${nome} ${sobrenome}, você tem ${idade} anos e trabalha com ${profissao}`
+})
